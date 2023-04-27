@@ -19,7 +19,7 @@ h1{
     background-color: #242526;
     padding:10px;
     position:fixed;
-    width: 100vw;
+    width: 100%;
 }
 .search-box{
     padding: 1em;
@@ -72,7 +72,7 @@ h5{
     align-items: center;
     height: 80vh;
     width: 20vw;
-    margin-top:4.2em;
+    margin-top:6em;
     position: fixed;
 }
 
@@ -90,6 +90,7 @@ h5{
     
 }
 .nav-bar2 a{
+
     white-space:nowrap;
     color: white;
     font-size: 1em;
@@ -142,14 +143,17 @@ h5{
     
 }
 .feed-icons{
-    margin: 20px;
+    margin: 10px;
     background-color: #383838;
     height: 43vh;
-    width: 50vw;
+    width: 40vw;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
     
+}
+.feed-icons a{
+    padding: 10px;
 }
 .feed-2{
     display: flex;
@@ -172,7 +176,7 @@ background-color:gray;
 border-radius: 20px;
 }
 .stories1 {
-    height:28vh;
+    height:22vh;
     width: 20vh;
     background-color: gray;
     margin: 5px;
@@ -212,6 +216,16 @@ h2{
 font-display: flex;
 justify-content: center;
 flex-flow: column;
+scroll-behavior: smooth;
+overflow-x:auto;
+max-height: 100vh;
+}
+.none a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
 }
 .contact-main a{
     text-align: center;
@@ -235,18 +249,25 @@ flex-flow: column;
 }
 .one{
     margin: 10px;
+    background-color: #383838;
+    border-radius: 10px;
+    height: 60vh;
+    width: 40vw;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
 }
 .updates{
-    background-color: #383838;
-    width:50vw;
+    width:40vw;
     display: flex;
     justify-content: center;
     flex-flow: column;
     border-radius: 20px;
 }
 .updates .one-img{
-    height: 40vh;
-    width: 40vw;
+    height: 43vh;
+    width: 39vw;
 }
 h3{
     color: white;
@@ -261,6 +282,7 @@ h3 img:hover{
 h3 img{
     height: 2em;
     width: 2em;
+    margin: 10px;
     border-radius:100%;
 }
 #Friends{
@@ -274,14 +296,17 @@ h3 img{
         overflow-x: hidden;
         
     }
+    .feed-icons{
+        width: 100vw;
+    }
     
     .nav-bar img{
         height: 30px;
         width: 30px;
     }
     .nav-bar{
-        width: 80vw;
-        position: fixed;
+        width: 100%;
+        background-color: #242526;
     }
     h1{
         font-size:1em;
@@ -303,14 +328,11 @@ h3 img{
         display: none;
     }
     .feed{
-        width: 78vw;
+        width: 90vw;
         margin-left: 0px;
         margin-right: 0px;
     }
-    .feed-icons{
-        width: 70vw;
-        margin: 10px;
-    }
+    
     .feed-icons a{
         font-size: 10px;
     }
@@ -320,11 +342,14 @@ h3 img{
         display: flex;
     
     }
-    .updates{
-        width: 70vw;
+    .one{
+        width: 90vw;
     }
-    .updates .one-img{
-    width: 60vw;
+    .updates{
+        width: 100vw;
+    }
+    .one-img{
+    width: 80vw;
     }
     .stories1{
         height: 15vh;
@@ -336,7 +361,13 @@ h3 img{
         display: inline;
     }
 }
-@media screen and (max-width: 820px){
+@media screen and (max-width: 300px){
+    .feed{
+        width: 100vw;
+    }
+
+}
+@media screen and (max-width: 700px){
     .contact{
         display: none;
     }
@@ -350,8 +381,8 @@ h3 img{
         width: 30px;
     }
     .nav-bar{
-        width: 80vw;
-        position: fixed;
+        width: 100vw;
+        
     }
     h1{
         font-size:1.5em;
