@@ -263,3 +263,146 @@ h3 img{
     width: 2em;
     border-radius:100%;
 }
+#Friends{
+    display: none;
+}
+#Search{
+    display: none;
+}
+@media screen and (max-width: 450px){
+    body{
+        overflow-x: hidden;
+        
+    }
+    
+    .nav-bar img{
+        height: 30px;
+        width: 30px;
+    }
+    .nav-bar{
+        width: 80vw;
+        position: fixed;
+    }
+    h1{
+        font-size:1em;
+    }
+    .search-box{
+        width: 20vw;
+        height: 3vh;
+        display: none;
+    }
+    .icons i{
+        font-size: 13px;
+        padding: 15px;
+        margin: 5px;
+    }
+    .nav-bar2{
+        display:none;
+    }
+    .contact{
+        display: none;
+    }
+    .feed{
+        width: 78vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .feed-icons{
+        width: 70vw;
+        margin: 10px;
+    }
+    .feed-icons a{
+        font-size: 10px;
+    }
+    .feed-icons i{
+        font-size: 10px;
+        margin: 5px;
+        display: flex;
+    
+    }
+    .updates{
+        width: 70vw;
+    }
+    .updates .one-img{
+    width: 60vw;
+    }
+    .stories1{
+        height: 15vh;
+    }
+    #Friends{
+        display: inline;
+    }
+    #Search{
+        display: inline;
+    }
+}
+@media screen and (max-width: 820px){
+    .contact{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+        
+    }
+    
+    .nav-bar img{
+        height: 30px;
+        width: 30px;
+    }
+    .nav-bar{
+        width: 80vw;
+        position: fixed;
+    }
+    h1{
+        font-size:1.5em;
+    }
+    .search-box{
+        width: 20vw;
+        height: 3vh;
+        display: none;
+    }
+    .icons i{
+        font-size: 16px;
+        padding: 15px;
+        margin: 5px;
+    }
+    .nav-bar2{
+        display:none;
+    }
+    .contact{
+        display: none;
+    }
+    .feed{
+        width: 78vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .feed-icons{
+        width: 70vw;
+        margin: 10px;
+    }
+    .feed-icons a{
+        font-size: 16px;
+    }
+    .feed-icons i{
+        font-size: 16px;
+        margin: 5px;
+        display: flex;
+    
+    }
+    .updates{
+        width: 70vw;
+    }
+    .updates .one-img{
+    width: 60vw;
+    }
+    .stories1{
+        height: 15vh;
+    }
+    #Friends{
+        display: inline;
+    }
+    #Search{
+        display: inline;
+    }
+}
