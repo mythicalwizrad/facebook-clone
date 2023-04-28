@@ -6,7 +6,6 @@
 }
 body{
     background-color: rgb(36, 36, 36);
-    display: flex;
 }
 h1{
     color: white;
@@ -146,7 +145,7 @@ h5{
     margin: 10px;
     background-color: #383838;
     height: 43vh;
-    width: 40vw;
+    width: 36vw;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
@@ -249,10 +248,11 @@ max-height: 100vh;
 }
 .one{
     margin: 10px;
+    margin-left: 22px;
     background-color: #383838;
     border-radius: 10px;
-    height: 60vh;
-    width: 40vw;
+    height: 75vh;
+    width: 36vw;
     overflow: hidden;
     display: flex;
     flex-flow: column;
@@ -267,7 +267,8 @@ max-height: 100vh;
 }
 .updates .one-img{
     height: 43vh;
-    width: 39vw;
+    width: 33vw;
+    margin: 15px;
 }
 h3{
     color: white;
@@ -290,6 +291,31 @@ h3 img{
 }
 #Search{
     display: none;
+}
+.break2{
+    margin-left: 2px;
+    text-align: center;
+    width: 35vw;
+    height: 0.5px;
+    color: gray;
+    background-color: gray;
+}
+.functions{
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.functions{
+    font-size: medium;
+    font-weight:normal;
+
+}
+
+.functions a:hover{
+    background-color:gray;
+    border-radius: 10px;
 }
 @media screen and (max-width: 450px){
     body{
@@ -329,10 +355,9 @@ h3 img{
     }
     .feed{
         width: 90vw;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin: 20px;
     }
-    
+   
     .feed-icons a{
         font-size: 10px;
     }
@@ -342,14 +367,16 @@ h3 img{
         display: flex;
     
     }
-    .one{
-        width: 90vw;
-    }
     .updates{
         width: 100vw;
     }
     .one-img{
     width: 80vw;
+    }
+    .one{
+        width:90vw ;
+        padding: 90vw;
+        height: 80vh;
     }
     .stories1{
         height: 15vh;
