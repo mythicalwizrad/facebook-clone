@@ -5,7 +5,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    background-color: rgb(36, 36, 36);
+    background-color:#272727;
 }
 h1{
     color: white;
@@ -15,14 +15,15 @@ h1{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: #242526;
+    background-color: #272727;
     padding:10px;
+    height: 10vh;
     position:fixed;
-    width: 100%;
+    width:100%;
 }
 .search-box{
     padding: 1em;
-    width: 20em;
+    width: 40vw;
     border-color:transparent;
     border-radius: 20px;
     background-color: rgb(66, 65, 65);
@@ -35,10 +36,16 @@ h1{
     flex-flow:row;
 }
 .icons i{
+    margin-top: 2em;
     background-color: rgb(66, 64, 64);
-    padding: 20px;
-    border-radius:1000000em;
-    margin: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    border-radius:100%;
+    margin: 10px;
+    text-align: center;
   
 }
  i:hover{
@@ -48,9 +55,9 @@ h1{
 }
 .icons img{
     border-radius: 100%;
-    height: 2.5em;
-    width: 2.5em;
-    margin: 0.2em;
+    height: 2em;
+    width: 2em;
+    margin: 1em;
 }
 .icons img:hover{
     cursor: pointer;
@@ -71,7 +78,7 @@ h5{
     align-items: center;
     height: 80vh;
     width: 20vw;
-    margin-top:6em;
+    margin-top:8em;
     position: fixed;
 }
 
@@ -83,8 +90,8 @@ h5{
 }
 .profiles img{
     margin: 0.5em;
-    height: 1.5em;
-    width: 1.5em;
+    height: 2em;
+    width: 2em;
     border-radius: 100%;
     
 }
@@ -162,6 +169,10 @@ h5{
 .stories{
     display: flex;
 }
+.stories1 img{
+    height: 22vh;
+    width: 20vh;
+}
 
 .feed a{
 color: white;
@@ -175,7 +186,7 @@ background-color:gray;
 border-radius: 20px;
 }
 .stories1 {
-    height:22vh;
+    height:23vh;
     width: 20vh;
     background-color: gray;
     margin: 5px;
@@ -251,8 +262,8 @@ max-height: 100vh;
     margin-left: 22px;
     background-color: #383838;
     border-radius: 10px;
-    height: 75vh;
-    width: 36vw;
+    height: 77vh;
+    width:36vw;
     overflow: hidden;
     display: flex;
     flex-flow: column;
@@ -334,17 +345,22 @@ h3 img{
         width: 100%;
         background-color: #242526;
     }
+    .icons{
+        display: flex;
+        width: 60vw;
+    }
     h1{
-        font-size:1em;
+        font-size:auto;
     }
     .search-box{
         width: 20vw;
         height: 3vh;
         display: none;
     }
+
     .icons i{
-        font-size: 13px;
-        padding: 15px;
+        font-size: 10px;
+        padding: 10px;
         margin: 5px;
     }
     .nav-bar2{
@@ -357,7 +373,13 @@ h3 img{
         width: 90vw;
         margin: 20px;
     }
-   
+    .feed-icons{
+        width: 80vw;
+        margin-right: 20px;
+        margin-top: 55px;
+
+    
+    }
     .feed-icons a{
         font-size: 10px;
     }
@@ -374,18 +396,38 @@ h3 img{
     width: 80vw;
     }
     .one{
-        width:90vw ;
-        padding: 90vw;
-        height: 80vh;
+        width:80vw ;
     }
     .stories1{
         height: 15vh;
     }
     #Friends{
-        display: inline;
+    
+        margin-top: 2em;
+        background-color: rgb(66, 64, 64);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2em;
+        width: 2em;
+        border-radius:100%;
+        margin: 10px;
+        text-align: center;
     }
     #Search{
-        display: inline;
+        margin-top: 2em;
+        background-color: rgb(66, 64, 64);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2em;
+        width: 2em;
+        border-radius:100%;
+        margin: 10px;
+        text-align: center;
+    }
+    .break2{
+        width:80vw;
     }
 }
 @media screen and (max-width: 300px){
@@ -401,6 +443,9 @@ h3 img{
     body{
         overflow-x: hidden;
         
+    }
+    feed-icons{
+        margin: 50px;
     }
     
     .nav-bar img{
@@ -436,8 +481,12 @@ h3 img{
         margin-right: 0px;
     }
     .feed-icons{
-        width: 70vw;
-        margin: 10px;
+        width: 80vw;
+        margin-left:100px ;
+    
+    }
+    .break2{
+        width:80vw;
     }
     .feed-icons a{
         font-size: 16px;
@@ -448,19 +497,41 @@ h3 img{
         display: flex;
     
     }
+    .one{
+        width:80vw;
+        
+    }
     .updates{
         width: 70vw;
     }
     .updates .one-img{
-    width: 60vw;
+    width: 70vw;
     }
     .stories1{
         height: 15vh;
     }
     #Friends{
-        display: inline;
+        margin-top: 2em;
+        background-color: rgb(66, 64, 64);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2em;
+        width: 2em;
+        border-radius:100%;
+        margin: 10px;
+        text-align: center;
     }
     #Search{
-        display: inline;
+        margin-top: 2em;
+        background-color: rgb(66, 64, 64);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2em;
+        width: 2em;
+        border-radius:100%;
+        margin: 10px;
+        text-align: center;
     }
 }
