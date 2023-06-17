@@ -5,7 +5,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    background-color:#272727;
+    background-color:#18181b;
 }
 h1{
     color: white;
@@ -150,7 +150,7 @@ h5{
 }
 .feed-icons{
     margin: 10px;
-    background-color: #383838;
+    background-color:#252527;
     height: 43vh;
     width: 36vw;
     border-radius: 10px;
@@ -260,7 +260,7 @@ max-height: 100vh;
 .one{
     margin: 10px;
     margin-left: 22px;
-    background-color: #383838;
+    background-color:#252527;
     border-radius: 10px;
     height: 77vh;
     width:36vw;
